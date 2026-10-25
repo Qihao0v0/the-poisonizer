@@ -1,0 +1,22 @@
+Denpa1zer
+Copyright 2026 Denpa1zer contributors.
+
+This project fine-tunes MiniMind2-Small by jingyaogong:
+https://huggingface.co/jingyaogong/MiniMind2-Small
+Base revision: 8c0c0de640cd532fee03d329b95a58c56591b5bc
+Upstream project: https://github.com/jingyaogong/minimind
+Upstream model card declares Apache License 2.0.
+
+Changes include forum-specific training, data selection, task serialization,
+inference, evaluation, and packaging. Original base weights are kept separately.
+
+The optional data-generation teacher is Qwen/Qwen2.5-1.5B-Instruct,
+revision 989aa7980e4cf806f80c7fef2b1adb7bc71aa306 (Apache-2.0).
+The teacher model is not needed for inference and is not included in the release.
+
+Dataset sources and their stated terms are documented in docs/data.md.
+The project code license does not relicense third-party datasets or their content.
+
+This native-text adaptation adds no teacher-generated targets or rule-combined nicknames.
+It uses literal recent-community nicknames and original forum texts.
+The parent Denpa1zer v0.1.0 training used a small synthetic supplement as recorded above.
