@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>電波放送论坛</title><meta name="description" content="直到我们得以谋害并拯救这个世界。"><link rel="icon" href="data:,">  <script type="module" crossorigin src="./assets/index-DB5el1KJ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BsEMMQ9N.css">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>電波放送论坛</title><meta name="description" content="直到我们得以谋害并拯救这个世界。"><link rel="icon" href="data:,">  <script type="module" crossorigin src="./assets/index-BgdaIw_e.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BInNUMe-.css">
 </head>
 <body><svg class="definitions" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
 <defs>
@@ -142,7 +142,27 @@
     <div class="admin-body"><p class="muted">电波调制中</p><label for="post-title">标题</label><input id="post-title" maxlength="100" required><label for="post-body">正文</label><textarea id="post-body" rows="7" maxlength="20000" required></textarea><p class="form-error" role="alert"></p><button class="button" type="submit">发表</button></div>
   </form>
 </dialog>
-
+
+<button id="chan-launcher" class="chan-launcher" type="button" hidden aria-expanded="true" aria-controls="chan-window">站娘</button>
+<section id="chan-window" class="chan-window" role="region" aria-labelledby="chan-title">
+  <header id="chan-titlebar" class="chan-titlebar"><h2 id="chan-title">Denpa1zer-Chan</h2><button id="chan-minimize" type="button" aria-label="最小化">＿</button></header>
+  <div class="chan-content">
+    <div class="chan-conversation">
+      <div id="chan-messages" class="chan-messages" role="log" aria-label="聊天记录" aria-live="polite"></div>
+      <form id="chan-form" class="chan-form">
+        <label class="sr-only" for="chan-input">消息</label><textarea id="chan-input" class="chan-input" rows="3" maxlength="4000" disabled></textarea>
+        <div class="chan-actions"><button id="chan-send" type="submit" disabled>发送</button></div>
+      </form>
+    </div>
+    <aside class="chan-profile" aria-label="站娘">
+      <div class="chan-avatar" role="img" aria-label="站娘头像（暂空）"></div>
+      <div class="chan-voltage-row"><label class="sr-only" for="chan-voltage">V值</label><input id="chan-voltage" type="range" min="0" max="200" step="1" value="0"><output id="chan-value" class="chan-voltage-value" for="chan-voltage">0V</output></div>
+      <button id="chan-load" type="button">加载站娘</button>
+      <button id="chan-reset" type="button" aria-label="重置对话" hidden><span class="chan-reset-emoji" aria-hidden="true">✝️</span></button>
+    </aside>
+  </div>
+  <p id="chan-status" class="chan-status" role="status" aria-live="polite"></p>
+</section>
 </body>
 </html>
 

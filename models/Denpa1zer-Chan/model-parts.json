@@ -1,0 +1,21 @@
+{
+  "version": "0.1.1",
+  "bytes": 147683192,
+  "parts": [
+    {
+      "file": "decoder-0.1.1-0.bin",
+      "bytes": 50331648,
+      "sha256": "7b3fe02a94d4b7d39abda60bdd8b79b60dcad5b6d607c5253759be6bddb2a951"
+    },
+    {
+      "file": "decoder-0.1.1-1.bin",
+      "bytes": 50331648,
+      "sha256": "19c84def45186f1993025d481f14615e30a12a6463a2f7e6c9b0de82ebd3c00b"
+    },
+    {
+      "file": "decoder-0.1.1-2.bin",
+      "bytes": 47019896,
+      "sha256": "a1da90929765d163de732c02542f367bb35053d73bf1f06f294c7503488f2099"
+    }
+  ]
+}
