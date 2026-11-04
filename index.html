@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>電波放送论坛</title><meta name="description" content="直到我们得以谋害并拯救这个世界。"><link rel="icon" href="data:,">  <script type="module" crossorigin src="./assets/index-B8CXmMVd.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BInNUMe-.css">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>電波放送论坛</title><meta name="description" content="直到我们得以谋害并拯救这个世界。"><link rel="icon" href="data:,">  <script type="module" crossorigin src="./assets/index-D01Dhsk8.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Cg00dA8B.css">
 </head>
 <body><svg class="definitions" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
 <defs>
@@ -113,6 +113,13 @@
       </section>
       <div class="panel toolbar thread-toolbar"><a class="button" href="index.html" data-back-board>« 返回长波电台</a><a class="button toolbar-end" href="#top">返回顶部 ↑</a></div>
     </section>
+    <section id="author-view" hidden aria-labelledby="author-topics-title">
+      <div class="panel toolbar"><a class="button" href="index.html" data-back-board>« 返回长波电台</a></div>
+      <section class="panel"><div class="bar"><h2 id="author-topics-title">Ta发布的主题</h2></div><p id="author-topics-name" class="board-description"></p>
+      <table class="thread-table"><colgroup><col><col><col><col><col><col><col></colgroup><thead><tr><th></th><th></th><th>主题</th><th>作者</th><th>回复</th><th>浏览</th><th>最后发表</th></tr></thead><tbody id="author-topics-list"></tbody></table>
+      <p id="author-topics-empty" class="board-description" hidden>暂无主题。</p>
+      <nav class="toolbar pagination" aria-label="作者主题分页"><button class="button" id="author-previous" type="button">上一页</button><span id="author-page"></span><button class="button" id="author-next" type="button">下一页 »</button></nav></section>
+    </section>
   </main>
   <div class="reception panel"><p id="list-status" role="status" aria-live="polite">正在接收电波……</p><button class="button" id="cancel-load" type="button" hidden>取消</button><button class="button" id="retry-load" type="button" hidden>重试</button></div>
 
@@ -162,7 +169,8 @@
     </aside>
   </div>
   <p id="chan-status" class="chan-status" role="status" aria-live="polite"></p>
-</section>
+</section>
+
 </body>
 </html>
 
