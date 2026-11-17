@@ -26,6 +26,14 @@
       "rstrip": false,
       "single_word": false,
       "special": true
+    },
+    "6400": {
+      "content": "<|denpa_mask|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
     }
   },
   "additional_special_tokens": [],
@@ -34,6 +42,7 @@
   "eos_token": "<|im_end|>",
   "extra_special_tokens": {},
   "legacy": true,
+  "mask_token": "<|denpa_mask|>",
   "model_max_length": 32768,
   "pad_token": "<|endoftext|>",
   "sp_model_kwargs": {},
